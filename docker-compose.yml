@@ -4,8 +4,8 @@ services:
     prometheus:
         container_name: prometheus
         # If running on a 32-bit Raspberry Pi, use:
-        # image: prom/prometheus:v1.7.2
-        build: ./prometheus
+        image: prom/prometheus-linux-arm64:latest
+        # build: ./prometheus
         volumes:
             - prometheus_data:/prometheus
         command:
