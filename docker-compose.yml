@@ -19,7 +19,7 @@ services:
         restart: on-failure
     node-exporter:
         container_name: node-exporter
-        image: prom/node-exporter-linux-armv7
+        image: prom/node-exporter
         ports:
             - "9100:9100"
         restart: on-failure
